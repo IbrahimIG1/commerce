@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1047733480813",
+    "project_id": "g-commerce-943b4",
+    "storage_bucket": "g-commerce-943b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047733480813:android:21ed12739b1a0f6c0e3e64",
+        "android_client_info": {
+          "package_name": "com.example.g_commerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6mBhRdCPpfHFKLNAGRX14-CU8Ub5F5pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
