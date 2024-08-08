@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:g_commerce/screens/home/screen_ui/home_screen.dart';
+import 'package:g_commerce/features/screens/home/screen_ui/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
