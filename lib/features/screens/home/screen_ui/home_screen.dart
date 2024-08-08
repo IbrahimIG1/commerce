@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:g_commerce/styles/text_styles.dart';
+import 'package:g_commerce/core/theming/text_styles.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           Text(
             'Home Screen',
-            style: textStyle.bold18Black,
+            style: textStyle.font18BoldBlack,
           ),
         ],
       )),
