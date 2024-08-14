@@ -19,4 +19,10 @@ class TextStyles {
     fontSize: 18.sp,
     fontWeight: FontWeightHelper.regular,
   );
+  // white
+  final TextStyle font18BoldWhite = TextStyle(
+    color: Colors.white,
+    fontSize: 18.sp,
+    fontWeight: FontWeightHelper.semiBold,
+  );
 }
