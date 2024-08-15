@@ -3,25 +3,30 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:g_commerce/core/helper/spacer_helper.dart';
 import 'package:g_commerce/features/screens/home/widgets/categorey_card.dart';
 import 'package:g_commerce/features/screens/home/widgets/slider/slider_images.dart';
+import 'package:g_commerce/generated/l10n.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    List<Widget> list = const [
+    List<Widget> list = [
       CategoreyCard(
-          image: 'assets/images/school_tools.jpg', categoreyName: 'Clothes'),
+          image: 'assets/images/school_tools.jpg',
+          categoreyName: S.of(context).clothes_category),
       CategoreyCard(
-          image: 'assets/images/school_tools.jpg', categoreyName: 'Food'),
+          image: 'assets/images/school_tools.jpg',
+          categoreyName: S.of(context).clinics_category),
       CategoreyCard(
-          image: 'assets/images/school_tools.jpg', categoreyName: 'Services'),
+          image: 'assets/images/school_tools.jpg',
+          categoreyName: S.of(context).food_category),
       CategoreyCard(
-          image: 'assets/images/school_tools.jpg', categoreyName: 'Tech'),
+          image: 'assets/images/school_tools.jpg',
+          categoreyName: S.of(context).tech_category),
     ];
     return Scaffold(
       appBar: AppBar(
-        title: Text('G Commerce',),
+        title: Text(S.of(context).title),
       ),
       body: SafeArea(
           child: SingleChildScrollView(
