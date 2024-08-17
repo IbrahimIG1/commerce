@@ -5,7 +5,6 @@ import 'package:g_commerce/features/screens/home/widgets/slider/slider_item.dart
 
 class SliderImages extends StatelessWidget {
   const SliderImages({super.key});
-
   // PageController pageController = PageController(viewportFraction: .85);
 
   @override
