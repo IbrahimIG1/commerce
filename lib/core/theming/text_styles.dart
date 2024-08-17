@@ -9,6 +9,11 @@ class TextStyles {
     fontSize: 18.sp,
     fontWeight: FontWeightHelper.semiBold,
   );
+  final TextStyle font14LightBlack = TextStyle(
+    color: Colors.black,
+    fontSize: 18.sp,
+    fontWeight: FontWeightHelper.light,
+  );
   final TextStyle font18MediumBlack = TextStyle(
     color: Colors.black,
     fontSize: 18.sp,

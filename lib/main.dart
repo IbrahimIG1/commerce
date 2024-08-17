@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:g_commerce/core/di/dependencey_injection.dart';
+import 'package:g_commerce/core/routing/app_router.dart';
+import 'package:g_commerce/core/routing/routes.dart';
 import 'package:g_commerce/core/theming/app_theme/main_theme.dart';
 import 'package:g_commerce/features/screens/home/screen_ui/home_screen.dart';
 import 'package:g_commerce/generated/l10n.dart';
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
         builder: (context, child) {
           return MaterialApp(
-            locale: const Locale('ar'),
+            locale: const Locale('en'),
             localizationsDelegates: const [
               S.delegate,
               GlobalMaterialLocalizations.delegate,
@@ -34,6 +36,8 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
             theme: appTheme(),
+            onGenerateRoute: AppRouter().generateRouter,
+            initialRoute: Routes.homeScreen,
             home: const HomeScreen(),
           );
         });

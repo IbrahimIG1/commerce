@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "clinics_category": MessageLookupByLibrary.simpleMessage("Clinics"),
         "clothes_category": MessageLookupByLibrary.simpleMessage("Clothes"),
         "food_category": MessageLookupByLibrary.simpleMessage("Food"),
+        "search_bar": MessageLookupByLibrary.simpleMessage("search"),
         "tech_category": MessageLookupByLibrary.simpleMessage("Tech"),
         "title": MessageLookupByLibrary.simpleMessage("G Commerce")
       };

@@ -10,20 +10,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Widget> list = [
-      CategoreyCard(
-          image: 'assets/images/school_tools.jpg',
-          categoreyName: S.of(context).clothes_category),
-      CategoreyCard(
-          image: 'assets/images/school_tools.jpg',
-          categoreyName: S.of(context).clinics_category),
-      CategoreyCard(
-          image: 'assets/images/school_tools.jpg',
-          categoreyName: S.of(context).food_category),
-      CategoreyCard(
-          image: 'assets/images/school_tools.jpg',
-          categoreyName: S.of(context).tech_category),
-    ];
+    
     return Scaffold(
       appBar: AppBar(
         title: Text(S.of(context).title),
@@ -47,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                       crossAxisCount: 2,
                       crossAxisSpacing: 10.w,
                       mainAxisSpacing: 20.h,
-                      children: list),
+                      children: list(context)),
                 ),
               )
             ],
@@ -57,3 +44,25 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+List<Widget> list(context) => [
+      CategoreyCard(
+          height: 100,
+          width: 100,
+          image: 'assets/images/school_tools.jpg',
+          categoreyName: S.of(context).clothes_category),
+      CategoreyCard(
+          height: 100,
+          width: 100,
+          image: 'assets/images/school_tools.jpg',
+          categoreyName: S.of(context).clinics_category),
+      CategoreyCard(
+          height: 100,
+          width: 100,
+          image: 'assets/images/school_tools.jpg',
+          categoreyName: S.of(context).food_category),
+      CategoreyCard(
+          height: 100,
+          width: 100,
+          image: 'assets/images/school_tools.jpg',
+          categoreyName: S.of(context).tech_category),
+    ];
