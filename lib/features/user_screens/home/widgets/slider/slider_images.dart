@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:g_commerce/features/screens/home/widgets/slider/slider_item.dart';
+import 'package:g_commerce/features/user_screens/home/widgets/slider/slider_item.dart';
 
 class SliderImages extends StatelessWidget {
   const SliderImages({super.key});

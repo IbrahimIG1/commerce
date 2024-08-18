@@ -4,12 +4,13 @@ import 'package:g_commerce/core/di/dependencey_injection.dart';
 import 'package:g_commerce/core/routing/app_router.dart';
 import 'package:g_commerce/core/routing/routes.dart';
 import 'package:g_commerce/core/theming/app_theme/main_theme.dart';
-import 'package:g_commerce/features/screens/home/screen_ui/home_screen.dart';
+import 'package:g_commerce/features/user_screens/home/screen_ui/home_screen.dart';
 import 'package:g_commerce/generated/l10n.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-void main() {
-  setupGetIt();
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await setupGetIt();
   runApp(const MyApp());
 }
 
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
             title: 'Flutter Demo',
             theme: appTheme(),
             onGenerateRoute: AppRouter().generateRouter,
-            initialRoute: Routes.homeScreen,
+            initialRoute: Routes.addDataScreen,
             home: const HomeScreen(),
           );
         });

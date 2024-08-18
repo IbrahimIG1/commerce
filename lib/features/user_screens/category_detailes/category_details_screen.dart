@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:g_commerce/core/helper/spacer_helper.dart';
-import 'package:g_commerce/features/screens/category_detailes/widgets/search_bar.dart';
-import 'package:g_commerce/features/screens/home/screen_ui/home_screen.dart';
-import 'package:g_commerce/features/screens/home/widgets/categorey_card.dart';
+import 'package:g_commerce/features/user_screens/category_detailes/widgets/search_bar.dart';
+import 'package:g_commerce/features/user_screens/home/screen_ui/home_screen.dart';
+import 'package:g_commerce/features/user_screens/home/widgets/categorey_card.dart';
 import 'package:g_commerce/generated/l10n.dart';
 
 class CategoryDetailsScreen extends StatelessWidget {
