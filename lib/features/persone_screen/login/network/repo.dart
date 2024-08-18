@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:g_commerce/core/network/networking_services.dart';
 
 class LoginRepo {
-  NetworkeServices _networkeServices;
+  final NetworkeServices _networkeServices;
   LoginRepo(this._networkeServices);
 
   Future<void> login() async {
