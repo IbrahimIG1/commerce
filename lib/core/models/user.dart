@@ -1,28 +1,21 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:g_commerce/core/models/person.dart';
 
-class UserModel {
-  final String? name;
-  final String? phone;
-  final String? image;
-  UserModel({this.name, this.phone, this.image});
+class UserModel extends PersonModel {
+  UserModel({required super.name, required super.phone, required super.image});
 
-  Map<String, dynamic> toMap() {
+  Map<String, dynamic> toJson() {
     return <String, dynamic>{
-      'name': name!,
-      'phone': phone!,
-      'image': image!,
+      'name': name,
+      'phone': phone,
+      'image': image,
     };
   }
 
-  factory UserModel.fromMap(Map<String, dynamic> map) {
+  factory UserModel.fromJson(Map<String, dynamic> json) {
     return UserModel(
-      name: map['name']!,
-      phone: map['phone']!,
-      image: map['image'] ?? "",
+      name: json['name'] as String,
+      phone: json['phone'] as String,
+      image: json['image'] as String,
     );
   }
-
-  // String toJson() => json.encode(toMap());
-
-  // factory User.fromJson(String source) => User.fromMap(json.decode(source) as Map<String, dynamic>);
 }

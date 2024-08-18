@@ -1,40 +1,35 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:g_commerce/core/models/product.dart';
-import 'package:g_commerce/core/models/user.dart';
-
-class AdminModel extends UserModel {
-  // String name;
-  // String phone;
-  // String? profileImage;
-  Product product;
+import 'package:g_commerce/core/models/person.dart';
+class AdminModel extends PersonModel {
+  String adress;
+  String categoryName;
+  String shopName;
   AdminModel({
-    // required this.name,
-    // required this.phone,
-    // this.profileImage,
-    String? name,
-    String? image,
-    String? phone,
-    required this.product,
-  }) : super(image: image!, name: name!, phone: phone!);
-// @override
-  @override
-  Map<String, dynamic> toMap() {
+    required this.adress,
+    required this.categoryName,
+    required this.shopName,
+    required super.name,
+    required super.phone,
+    required super.image,
+  });
+
+  Map<String, dynamic> toJson() {
     return <String, dynamic>{
-      // 'name': name,
-      // 'phone': phone,
-      // 'profile_image': profileImage,
-      
-      'product': product.toMap(),
+      'name': name,
+      'phone': phone,
+      'adress': adress,
+      'category_name': categoryName,
+      'shop_name': shopName,
     };
   }
 
-  factory AdminModel.fromMap(Map<String, dynamic> map) {
+  factory AdminModel.fromJson(Map<String, dynamic> json) {
     return AdminModel(
-      // name: map['name'] as String,
-      // phone: map['phone'] as String,
-      // profileImage:
-      //     map['profile_image'] != null ? map['profile_image'] as String : null,
-      product: Product.fromMap(map['product'] as Map<String, dynamic>),
+      name: json['name'] as String,
+      phone: json['phone'] as String,
+      adress: json['adress'] as String,
+      categoryName: json['category_name'] as String,
+      shopName: json['shop_name'] as String,
+      image: json['image'] as String,
     );
   }
 
