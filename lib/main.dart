@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
             title: 'Flutter Demo',
             theme: appTheme(),
             onGenerateRoute: AppRouter().generateRouter,
-            initialRoute: Routes.addDataScreen,
+            initialRoute: Routes.loginScreen,
             home: const HomeScreen(),
           );
         });
