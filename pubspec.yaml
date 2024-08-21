@@ -28,19 +28,26 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  bloc: ^8.1.4
-  carousel_slider: ^4.2.1
-  cloud_firestore: ^5.2.1
   cupertino_icons: ^1.0.6
+  # Bloc State Management 
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
+  # Slider
+  carousel_slider: ^4.2.1
+  # Firebase
+  cloud_firestore: ^5.2.1
   firebase_auth: ^5.1.4
   firebase_core: ^3.3.0
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.6
   flutter_localizations:
     sdk: flutter
+  # Translation
   flutter_screenutil: ^5.9.3
+  # DI
   get_it: ^7.7.0
+  intl: ^0.19.0
+  # Shared Prefrences
   shared_preferences: ^2.3.1
 
 dev_dependencies:
