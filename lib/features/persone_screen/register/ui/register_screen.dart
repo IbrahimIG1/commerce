@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:g_commerce/core/helper/spacer_helper.dart';
 import 'package:g_commerce/features/persone_screen/register/cubit/register_cubit.dart';
-import 'package:g_commerce/features/persone_screen/register/cubit/register_state.dart';
+import 'package:g_commerce/features/shared_widgets/form_field/form_field.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
@@ -9,18 +11,28 @@ class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: BlocConsumer<RegisterCubit, RegisterState>(
-        listener: (context, state) {},
-        builder: (context, state) {
-          RegisterCubit registerCubit = RegisterCubit.get(context);
-          return ElevatedButton(
-              onPressed: () {
-                registerCubit.register();
-              },
-              child: Text('Register'));
-        },
-      )),
+      body: SafeArea(
+        child: Padding(
+            padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 20.w),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                AppFormField(),
+                verticalSpace(20),
+                ElevatedButton(
+                    onPressed: () {
+                      validateThenDoSignUp(context);
+                    },
+                    child: Text('Register')),
+              ],
+            )),
+      ),
     );
+  }
+
+  void validateThenDoSignUp(BuildContext context) {
+    if (context.read<RegisterCubit>().formKey.currentState!.validate()) {
+      context.read<RegisterCubit>().register(context);
+    }
   }
 }

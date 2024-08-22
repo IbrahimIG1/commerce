@@ -5,13 +5,11 @@ import 'package:g_commerce/features/persone_screen/register/data/network/registe
 class RegisterRepo {
   final RegisterNetworkServices registerNetworkService;
   RegisterRepo(
-     this.registerNetworkService,
+    this.registerNetworkService,
   );
 
-  Future<void> register() async{
-    RegisterModel registerModel =
-        RegisterModel(userName: 'ibrahim@gmail.com', password: '123456');
-     registerNetworkService.register(
-        email: registerModel.userName, password: registerModel.password);
+  Future<void> register({required RegisterModel registerModel}) async {
+    registerNetworkService.register(
+        email: registerModel.email, password: registerModel.password);
   }
 }

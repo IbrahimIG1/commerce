@@ -24,7 +24,7 @@ class SliderItem extends StatelessWidget {
           padding: EdgeInsets.only(left: 10.w),
           child: Text(
             text,
-            style: TextStyles().font18BoldWhite,
+            style: TextStyles.font18BoldWhite,
           ),
         )
       ]),
