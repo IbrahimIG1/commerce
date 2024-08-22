@@ -39,9 +39,5 @@ class RegisterCubit extends Cubit<RegisterState> {
     });
   }
 
-  bool showPassword() {
-    isShowPassword = !isShowPassword;
-    emit(ShowPasswordState());
-    return isShowPassword;
-  }
+
 }
