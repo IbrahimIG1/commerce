@@ -15,7 +15,7 @@ class SearchBarWidget extends StatelessWidget {
         backgroundColor: WidgetStateProperty.all(Colors.white),
         elevation: WidgetStateProperty.all(3),
         hintText: S.of(context).search_bar,
-        hintStyle: WidgetStateProperty.all(TextStyles().font14LightBlack),
+        hintStyle: WidgetStateProperty.all(TextStyles.font14LightBlack),
         padding: WidgetStateProperty.all(EdgeInsets.only(
             right: isArabic() ? 15.w : 0, left: isArabic() ? 0 : 10.w)),
         leading: Icon(

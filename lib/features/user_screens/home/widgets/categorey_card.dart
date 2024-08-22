@@ -43,7 +43,7 @@ class CategoreyCard extends StatelessWidget {
                         image: AssetImage(image), fit: BoxFit.cover)),
               ),
             ),
-            Text(categoreyName, style: TextStyles().font18MediumBlack),
+            Text(categoreyName, style: TextStyles.font18MediumBlack),
           ],
         ),
       ),

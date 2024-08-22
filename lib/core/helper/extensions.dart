@@ -10,3 +10,7 @@ extension Navigation on BuildContext {
         .pushReplacementNamed(routeName, arguments: argument);
   }
 }
+
+extension StringExtension on String? {
+  bool isNullOrEmpty() => this == null || this == "";
+}

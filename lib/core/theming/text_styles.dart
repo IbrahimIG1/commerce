@@ -1,33 +1,45 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:g_commerce/core/theming/color.dart';
 import 'package:g_commerce/core/theming/font_weight.dart';
 
 class TextStyles {
   // Black
-  final TextStyle font18BoldBlack = TextStyle(
+  static final TextStyle font18BoldBlack = TextStyle(
     color: Colors.black,
     fontSize: 18.sp,
     fontWeight: FontWeightHelper.semiBold,
   );
-  final TextStyle font14LightBlack = TextStyle(
+  static final TextStyle font14LightBlack = TextStyle(
     color: Colors.black,
     fontSize: 18.sp,
     fontWeight: FontWeightHelper.light,
   );
-  final TextStyle font18MediumBlack = TextStyle(
+  static final TextStyle font18MediumBlack = TextStyle(
     color: Colors.black,
     fontSize: 18.sp,
     fontWeight: FontWeightHelper.medium,
   );
-  final TextStyle font18RegularBlack = TextStyle(
+  static final TextStyle font18RegularBlack = TextStyle(
     color: Colors.black,
     fontSize: 18.sp,
     fontWeight: FontWeightHelper.regular,
   );
   // white
-  final TextStyle font18BoldWhite = TextStyle(
+  static final TextStyle font18BoldWhite = TextStyle(
     color: Colors.white,
     fontSize: 18.sp,
     fontWeight: FontWeightHelper.semiBold,
+  );
+  // Grey
+  static final TextStyle font16GreyLightMedium = TextStyle(
+    color: Colors.grey,
+    fontSize: 16.sp,
+    fontWeight: FontWeightHelper.medium,
+  );
+  static final TextStyle font13GreyDarkRegular = TextStyle(
+    color: ColorsManager.greyDark,
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.regular,
   );
 }
