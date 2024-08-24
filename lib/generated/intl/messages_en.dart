@@ -22,11 +22,36 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "at_least_8_character":
+            MessageLookupByLibrary.simpleMessage("At least 8 character long"),
         "clinics_category": MessageLookupByLibrary.simpleMessage("Clinics"),
         "clothes_category": MessageLookupByLibrary.simpleMessage("Clothes"),
+        "email": MessageLookupByLibrary.simpleMessage("Email"),
         "food_category": MessageLookupByLibrary.simpleMessage("Food"),
+        "login": MessageLookupByLibrary.simpleMessage("login"),
+        "lowercase_validation":
+            MessageLookupByLibrary.simpleMessage("At least 1 smallcase letter"),
+        "number": MessageLookupByLibrary.simpleMessage("At least 1 number"),
+        "password": MessageLookupByLibrary.simpleMessage("password"),
+        "password_validation":
+            MessageLookupByLibrary.simpleMessage("password must have :-"),
+        "phone": MessageLookupByLibrary.simpleMessage("phone number"),
+        "please_enter_email":
+            MessageLookupByLibrary.simpleMessage("please enter a valid email"),
+        "please_enter_password": MessageLookupByLibrary.simpleMessage(
+            "please enter  a valid password"),
+        "please_enter_phone":
+            MessageLookupByLibrary.simpleMessage("please enter a valid phone"),
+        "please_enter_user_name":
+            MessageLookupByLibrary.simpleMessage("please enter the user name"),
+        "register": MessageLookupByLibrary.simpleMessage("register"),
         "search_bar": MessageLookupByLibrary.simpleMessage("search"),
+        "special_character": MessageLookupByLibrary.simpleMessage(
+            "At least 1 special character letter"),
         "tech_category": MessageLookupByLibrary.simpleMessage("Tech"),
-        "title": MessageLookupByLibrary.simpleMessage("G Commerce")
+        "title": MessageLookupByLibrary.simpleMessage("G Commerce"),
+        "uppercase_validation":
+            MessageLookupByLibrary.simpleMessage("At least 1 uppercase letter"),
+        "user_name": MessageLookupByLibrary.simpleMessage("user name")
       };
 }

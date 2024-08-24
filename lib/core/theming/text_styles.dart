@@ -10,9 +10,14 @@ class TextStyles {
     fontSize: 18.sp,
     fontWeight: FontWeightHelper.semiBold,
   );
+  static final TextStyle font14BoldBlack = TextStyle(
+    color: Colors.black,
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.semiBold,
+  );
   static final TextStyle font14LightBlack = TextStyle(
     color: Colors.black,
-    fontSize: 18.sp,
+    fontSize: 14.sp,
     fontWeight: FontWeightHelper.light,
   );
   static final TextStyle font18MediumBlack = TextStyle(

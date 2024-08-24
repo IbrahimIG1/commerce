@@ -4,5 +4,24 @@
     "food_category" : "Food",
     "clinics_category" : "Clinics",
     "tech_category" : "Tech",
-    "search_bar" : "search"
+    "search_bar" : "search",
+    "register" : "register",
+    "login" : "login",
+    "user_name" : "user name",
+    "email" : "Email",
+    "password" : "password",
+    "phone" : "phone number",
+    "password_validation" : "password must have :-",
+    "uppercase_validation" : "At least 1 uppercase letter",
+    "lowercase_validation" : "At least 1 smallcase letter",
+    "number" : "At least 1 number",
+    "special_character" :"At least 1 special character letter",
+    "at_least_8_character" : "At least 8 character long",
+    "please_enter_user_name" : "please enter the user name",
+    "please_enter_email" : "please enter a valid email",
+    "please_enter_phone" : "please enter a valid phone",
+    "please_enter_password" : "please enter  a valid password"
+
+    
+
 }
