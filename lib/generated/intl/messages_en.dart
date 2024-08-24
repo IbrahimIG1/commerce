@@ -28,7 +28,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "clothes_category": MessageLookupByLibrary.simpleMessage("Clothes"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "food_category": MessageLookupByLibrary.simpleMessage("Food"),
-        "login": MessageLookupByLibrary.simpleMessage("login"),
+        "login": MessageLookupByLibrary.simpleMessage("Login"),
         "lowercase_validation":
             MessageLookupByLibrary.simpleMessage("At least 1 smallcase letter"),
         "number": MessageLookupByLibrary.simpleMessage("At least 1 number"),
@@ -44,7 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("please enter a valid phone"),
         "please_enter_user_name":
             MessageLookupByLibrary.simpleMessage("please enter the user name"),
-        "register": MessageLookupByLibrary.simpleMessage("register"),
+        "register": MessageLookupByLibrary.simpleMessage("Register"),
         "search_bar": MessageLookupByLibrary.simpleMessage("search"),
         "special_character": MessageLookupByLibrary.simpleMessage(
             "At least 1 special character letter"),
