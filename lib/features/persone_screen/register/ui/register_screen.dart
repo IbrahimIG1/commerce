@@ -21,7 +21,7 @@ class RegisterScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                AppFormField(),
+                RegisterFormField(),
                 verticalSpace(20),
                 ElevatedButton(
                     onPressed: () {

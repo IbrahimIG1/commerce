@@ -17,7 +17,6 @@ class RegisterCubit extends Cubit<RegisterState> {
   TextEditingController passwordController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController phoneController = TextEditingController();
-  bool isShowPassword = false;
   final formKey = GlobalKey<FormState>();
 
   //* register

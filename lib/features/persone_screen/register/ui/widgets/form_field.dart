@@ -8,15 +8,15 @@ import 'package:g_commerce/features/persone_screen/register/cubit/register_cubit
 import 'package:g_commerce/features/persone_screen/register/ui/widgets/validation_password.dart';
 import 'package:g_commerce/generated/l10n.dart';
 
-class AppFormField extends StatefulWidget {
-  const AppFormField({
+class RegisterFormField extends StatefulWidget {
+  const RegisterFormField({
     super.key,
   });
   @override
-  State<AppFormField> createState() => _AppFormFieldState();
+  State<RegisterFormField> createState() => _RegisterFormFieldState();
 }
 
-class _AppFormFieldState extends State<AppFormField> {
+class _RegisterFormFieldState extends State<RegisterFormField> {
   bool isPasswordObscureText = true;
   bool isPasswordConfirmationObscureText = true;
   // validation variables

@@ -8,7 +8,7 @@ class LoginNetworkServices {
   void login({
     required String email,
     required String password,
-  }) async{
+  }) async {
     FirebaseAuth firebaseAuth = _firebaseFactory.getFirebaseAuth();
     await firebaseAuth
         .signInWithEmailAndPassword(email: email, password: password)
