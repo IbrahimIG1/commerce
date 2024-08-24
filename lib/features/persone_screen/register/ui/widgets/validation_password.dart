@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:g_commerce/core/helper/spacer_helper.dart';
 import 'package:g_commerce/core/theming/color.dart';
 import 'package:g_commerce/core/theming/text_styles.dart';
+import 'package:g_commerce/generated/l10n.dart';
 
 class PasswordValidation extends StatelessWidget {
   final bool hasLowerCase;
@@ -21,13 +22,15 @@ class PasswordValidation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        buildValidaion('At least 1 lowercase letter', hasLowerCase),
-        buildValidaion(
-            'At least 1 hasSpecial Character letter', hasSpecialCharacters),
-        buildValidaion('At least 1 uppercase letter', hasUpperCase),
-        buildValidaion('At least 1 Number', hasNumber),
-        buildValidaion('At least 8 characters long', hasMinLenght),
+        Text(S.of(context).password_validation,
+            style: TextStyles.font14BoldBlack),
+        buildValidaion(S.of(context).lowercase_validation, hasLowerCase),
+        buildValidaion(S.of(context).special_character, hasSpecialCharacters),
+        buildValidaion(S.of(context).uppercase_validation, hasUpperCase),
+        buildValidaion(S.of(context).number, hasNumber),
+        buildValidaion(S.of(context).at_least_8_character, hasMinLenght),
       ],
     );
   }

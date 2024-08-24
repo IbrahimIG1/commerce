@@ -109,6 +109,166 @@ class S {
       args: [],
     );
   }
+
+  /// `register`
+  String get register {
+    return Intl.message(
+      'register',
+      name: 'register',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `login`
+  String get login {
+    return Intl.message(
+      'login',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `user name`
+  String get user_name {
+    return Intl.message(
+      'user name',
+      name: 'user_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message(
+      'Email',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `password`
+  String get password {
+    return Intl.message(
+      'password',
+      name: 'password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `phone number`
+  String get phone {
+    return Intl.message(
+      'phone number',
+      name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `password must have :-`
+  String get password_validation {
+    return Intl.message(
+      'password must have :-',
+      name: 'password_validation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least 1 uppercase letter`
+  String get uppercase_validation {
+    return Intl.message(
+      'At least 1 uppercase letter',
+      name: 'uppercase_validation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least 1 smallcase letter`
+  String get lowercase_validation {
+    return Intl.message(
+      'At least 1 smallcase letter',
+      name: 'lowercase_validation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least 1 number`
+  String get number {
+    return Intl.message(
+      'At least 1 number',
+      name: 'number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least 1 special character letter`
+  String get special_character {
+    return Intl.message(
+      'At least 1 special character letter',
+      name: 'special_character',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least 8 character long`
+  String get at_least_8_character {
+    return Intl.message(
+      'At least 8 character long',
+      name: 'at_least_8_character',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please enter the user name`
+  String get please_enter_user_name {
+    return Intl.message(
+      'please enter the user name',
+      name: 'please_enter_user_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please enter a valid email`
+  String get please_enter_email {
+    return Intl.message(
+      'please enter a valid email',
+      name: 'please_enter_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please enter a valid phone`
+  String get please_enter_phone {
+    return Intl.message(
+      'please enter a valid phone',
+      name: 'please_enter_phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please enter  a valid password`
+  String get please_enter_password {
+    return Intl.message(
+      'please enter  a valid password',
+      name: 'please_enter_password',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

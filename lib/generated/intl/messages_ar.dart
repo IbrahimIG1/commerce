@@ -22,11 +22,36 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "at_least_8_character":
+            MessageLookupByLibrary.simpleMessage("لا تقل طول كلمة السر عن 8"),
         "clinics_category": MessageLookupByLibrary.simpleMessage("عيادات"),
         "clothes_category": MessageLookupByLibrary.simpleMessage("ملابس"),
+        "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
         "food_category": MessageLookupByLibrary.simpleMessage("أكل"),
+        "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "lowercase_validation":
+            MessageLookupByLibrary.simpleMessage("عدد 1 حرف انجليزي صغير"),
+        "number": MessageLookupByLibrary.simpleMessage("عدد 1 رقم"),
+        "password": MessageLookupByLibrary.simpleMessage("كلمة السر"),
+        "password_validation":
+            MessageLookupByLibrary.simpleMessage("كلمة السر يجب ان تحتوى على"),
+        "phone": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
+        "please_enter_email": MessageLookupByLibrary.simpleMessage(
+            "من فضلك ادخل البريد الالكتروني بشكل صحيح"),
+        "please_enter_password": MessageLookupByLibrary.simpleMessage(
+            "من فضلك ادخل كلمة السر بشكل صحيح"),
+        "please_enter_phone": MessageLookupByLibrary.simpleMessage(
+            "من فضلك ادخل رقم الهاتف بشكل صحيح"),
+        "please_enter_user_name":
+            MessageLookupByLibrary.simpleMessage("من فضلك ادخل اسم المستخدم"),
+        "register": MessageLookupByLibrary.simpleMessage("تسجيل حساب"),
         "search_bar": MessageLookupByLibrary.simpleMessage("بحث"),
+        "special_character":
+            MessageLookupByLibrary.simpleMessage("عدد 1 رمز (#,\$,%,&)"),
         "tech_category": MessageLookupByLibrary.simpleMessage("تكنولوجيا"),
-        "title": MessageLookupByLibrary.simpleMessage("تجارة")
+        "title": MessageLookupByLibrary.simpleMessage("تجارة"),
+        "uppercase_validation":
+            MessageLookupByLibrary.simpleMessage("عدد 1 حرف انجليزي كبير"),
+        "user_name": MessageLookupByLibrary.simpleMessage("اسم المستخدم")
       };
 }
