@@ -6,7 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 // import 'shared_prefrence_test.mocks.dart';
 
-@GenerateMocks([SharedPrefHelper])
+@GenerateMocks([SharedPrefImpl])
 void main() {
   setUp(() {
   // late final SharedPrefHelper sharedPrefHelper;

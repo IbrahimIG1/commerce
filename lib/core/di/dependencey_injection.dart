@@ -16,7 +16,9 @@ Future<void> setupGetIt() async {
   //* call and initial classes
 
   //* initial SharedPrefHelper
-  SharedPrefHelper.init();
+  SharedPrefImpl.initSharedPreference().then((value) {
+    print('init shared preference done');
+  });
   //* initial Firebase
   final FirebaseFactory firebaseFactory = FirebaseFactoryImpl();
   firebaseFactory.initFirebase();
