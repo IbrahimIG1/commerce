@@ -12,6 +12,7 @@ class AppTextFormFeild extends StatelessWidget {
   final bool? isObscure;
   final Color? backGroundColor;
   final TextEditingController? controller;
+  final TextInputType? keyboardType;
   final Function(String?) validator;
 
   const AppTextFormFeild(
@@ -25,12 +26,14 @@ class AppTextFormFeild extends StatelessWidget {
       this.isObscure,
       this.backGroundColor,
       this.controller,
-      required this.validator});
+      required this.validator,
+      this.keyboardType = TextInputType.name});
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
+      keyboardType: keyboardType,
       decoration: InputDecoration(
           isDense: true,
           hintText: hintText,

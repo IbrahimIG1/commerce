@@ -1,36 +1,41 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPrefHelper {
-  SharedPrefHelper._();
+  // SharedPrefHelper._();
 
+  static late SharedPreferences sharedprefrence;
+  static void init() async {
+    sharedprefrence = await SharedPreferences.getInstance();
+  }
 
   /// save [value] with a [key] in shared prefrence
-  Future<void> setData(String key, dynamic value) async {
-    SharedPreferences sharedPref = await SharedPreferences.getInstance();
+  static Future<void> setData(String key, dynamic value) async {
+    // SharedPreferences sharedPref = await SharedPreferences.getInstance();
     switch (value.runtimeType) {
       case String:
-        await sharedPref.setString(key, value);
+        await sharedprefrence.setString(key, value);
       case int:
-        await sharedPref.setInt(key, value);
+        await sharedprefrence.setInt(key, value);
       case double:
-        await sharedPref.setDouble(key, value);
+        await sharedprefrence.setDouble(key, value);
       case bool:
-        await sharedPref.setBool(key, value);
+        await sharedprefrence.setBool(key, value);
       default:
         return null;
     }
   }
-  /// get String data from shared prefrence with [key]
-  getStringData(String key) async {
-    SharedPreferences sharedPref = await SharedPreferences.getInstance();
 
-    sharedPref.getString(key) ?? "No String Data To get by sharedPref";
+  /// get String data from shared prefrence with [key]
+  static getStringData(String key) async {
+     sharedprefrence.getString(key);
+    // await SharedPreferences.getInstance().then((value) {
+    //   value.getString(key) ?? "No String Data To get by sharedPref";
+    // });
   }
 
   /// get Int data from shared prefrence with [key]
   getIntData(String key) async {
     SharedPreferences sharedPref = await SharedPreferences.getInstance();
-
     return sharedPref.getInt(key) ?? "No Int Data To get by sharedPref";
   }
 
@@ -43,6 +48,8 @@ class SharedPrefHelper {
   /// rermove all keys and values from shared Prefrence
   clearAllData() async {
     SharedPreferences sharedPref = await SharedPreferences.getInstance();
-    sharedPref.clear();
+    sharedPref.clear().then((onValue) {
+      print("clear data done");
+    });
   }
 }
