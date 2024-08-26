@@ -3,12 +3,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:g_commerce/core/di/dependencey_injection.dart';
 import 'package:g_commerce/core/routing/routes.dart';
 import 'package:g_commerce/features/admin_screens/add_data_screen.dart';
-import 'package:g_commerce/features/persone_screen/login/cubit/login_cubit.dart';
-import 'package:g_commerce/features/persone_screen/login/ui/login_screen.dart';
-import 'package:g_commerce/features/persone_screen/register/cubit/register_cubit.dart';
-import 'package:g_commerce/features/persone_screen/register/ui/register_screen.dart';
-import 'package:g_commerce/features/user_screens/category_detailes/category_details_screen.dart';
-import 'package:g_commerce/features/user_screens/home/screen_ui/home_screen.dart';
+import 'package:g_commerce/features/screens/login/cubit/login_cubit.dart';
+import 'package:g_commerce/features/screens/login/ui/login_screen.dart';
+import 'package:g_commerce/features/screens/register/cubit/register_cubit.dart';
+import 'package:g_commerce/features/screens/register/ui/register_screen.dart';
+import 'package:g_commerce/features/screens/category_detailes/category_details_screen.dart';
+import 'package:g_commerce/features/screens/home/screen_ui/home_screen.dart';
 
 import '../../features/admin_screens/cubit/admin_cubit.dart';
 
