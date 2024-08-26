@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:g_commerce/core/helper/extensions.dart';
+import 'package:g_commerce/core/routing/routes.dart';
 import 'package:g_commerce/core/theming/text_styles.dart';
 
 import '../../../../core/helper/shared_prefrence.dart';
@@ -19,12 +21,8 @@ class CategoreyCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () async {
-        // await SharedPrefHelper.get().clearAllData();
-
-        print('tap');
-        // context.pushNamed(Routes.categoryDetailsScreen,
-        //     argument: categoreyName);
-        print(await SharedPrefHelper.getStringData('user_uid2'));
+        context.pushNamed(Routes.categoryDetailsScreen,
+            argument: categoreyName);
       },
       child: Container(
         width: width.w,

@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:g_commerce/core/helper/shared_prefrence.dart';
 import 'package:g_commerce/core/network/firebase_factory.dart';
 
 abstract class AuthNetworkeServices {
@@ -12,9 +13,14 @@ class AuthNetworkServicesImpl implements AuthNetworkeServices {
 
   @override
   Future<void> login(String email, String password) async {
+    SharedPref sharedPref = SharedPrefImpl();
     FirebaseAuth firebaseAuth = firebaseFactory.getFirebaseAuth();
-    await firebaseAuth.signInWithEmailAndPassword(
-        email: email, password: password);
+    await firebaseAuth
+        .signInWithEmailAndPassword(email: email, password: password)
+        .then((value) {
+      print(value.user!.uid);
+      sharedPref.setSecureString('user_id', value.user!.uid);
+    });
   }
 
   @override
